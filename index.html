@@ -1,462 +1,82 @@
-<html xmlns:o="urn:schemas-microsoft-com:office:office"
-      xmlns:w="urn:schemas-microsoft-com:office:word"
-      xmlns="[http://www.w3.org/TR/REC-html40](http://www.w3.org/TR/REC-html40)">
+<!doctype html>
+<html lang="ko">
 <head>
-<meta charset="utf-8">
-<title>Developer Portfolio - GIS · Backend · Cloud Software Engineer</title>
-<!--[if gte mso 9]>
-<xml>
- <w:WordDocument>
-  <w:View>Print</w:View>
-  <w:Zoom>100</w:Zoom>
-  <w:DoNotOptimizeForBrowser/>
- </w:WordDocument>
-</xml>
-<![endif]-->
-<style>
-    @page {
-        size: A4 portrait;
-        margin: 20mm 20mm 20mm 20mm;
-    }
-    body {
-        font-family: '맑은 고딕', 'Malgun Gothic', Arial, sans-serif;
-        font-size: 10pt;
-        line-height: 1.6;
-        color: #222222;
-        background-color: #ffffff;
-    }
-    h1 {
-        font-size: 20pt;
-        font-weight: bold;
-        color: #1a365d;
-        border-bottom: 2.5pt solid #1a365d;
-        padding-bottom: 6px;
-        margin-top: 28px;
-        margin-bottom: 16px;
-    }
-    h2 {
-        font-size: 14pt;
-        font-weight: bold;
-        color: #2b6cb0;
-        border-bottom: 1pt solid #e2e8f0;
-        padding-bottom: 4px;
-        margin-top: 22px;
-        margin-bottom: 12px;
-    }
-    h3 {
-        font-size: 11pt;
-        font-weight: bold;
-        color: #2d3748;
-        margin-top: 14px;
-        margin-bottom: 6px;
-    }
-    p {
-        margin-top: 0;
-        margin-bottom: 8px;
-    }
-    .header-subtitle {
-        font-size: 13pt;
-        font-weight: bold;
-        color: #4a5568;
-        margin-top: -10px;
-        margin-bottom: 16px;
-    }
-    .skill-tags {
-        margin: 0 0 18px 0;
-        padding: 12px 14px;
-        background-color: #f7fafc;
-        border-left: 4pt solid #2b6cb0;
-    }
-    .skill-tags .label {
-        display: block;
-        margin-bottom: 7px;
-        color: #1a365d;
-        font-size: 9pt;
-        font-weight: bold;
-        letter-spacing: 0.3px;
-    }
-    .notice-box {
-        background-color: #f7fafc;
-        border: 1pt solid #cbd5e0;
-        border-left: 4pt solid #e53e3e;
-        padding: 12px 16px;
-        margin: 16px 0;
-    }
-    .notice-title {
-        font-weight: bold;
-        color: #c53030;
-        font-size: 10.5pt;
-        margin-bottom: 6px;
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 12px 0 18px 0;
-        font-size: 9.5pt;
-    }
-    th {
-        background-color: #edf2f7;
-        color: #2d3748;
-        font-weight: bold;
-        text-align: left;
-        padding: 8px 10px;
-        border: 1pt solid #cbd5e0;
-    }
-    td {
-        padding: 7px 10px;
-        border: 1pt solid #cbd5e0;
-        vertical-align: top;
-    }
-    tr:nth-child(even) td {
-        background-color: #f8fafc;
-    }
-    pre, .diagram-box {
-        font-family: 'Consolas', 'Courier New', monospace;
-        font-size: 8.5pt;
-        background-color: #1e293b;
-        color: #f8fafc;
-        padding: 12px;
-        border-radius: 4px;
-        white-space: pre;
-        line-height: 1.4;
-        margin: 10px 0 16px 0;
-    }
-    .case-box {
-        border: 1pt solid #e2e8f0;
-        background-color: #ffffff;
-        padding: 12px 14px;
-        margin-bottom: 16px;
-    }
-    .metric-box {
-        margin-top: 10px;
-        padding: 9px 12px;
-        background-color: #ebf8ff;
-        border-left: 4pt solid #3182ce;
-        color: #1a365d;
-    }
-    .metric-label {
-        color: #2b6cb0;
-        font-weight: bold;
-    }
-    .case-title {
-        font-size: 11pt;
-        font-weight: bold;
-        color: #2b6cb0;
-        margin-bottom: 8px;
-    }
-    .tag {
-        display: inline-block;
-        background-color: #e2e8f0;
-        color: #2d3748;
-        padding: 3px 7px;
-        font-size: 8.5pt;
-        font-weight: bold;
-        margin-right: 4px;
-        margin-bottom: 5px;
-        border-radius: 3px;
-        border: 1px solid #cbd5e0;
-    }
-    .page-break {
-        page-break-before: always;
-    }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Developer Portfolio | GIS · Backend · Cloud</title>
+  <style>
+    :root { --navy:#173d70; --blue:#2467ae; --line:#d7e0eb; --soft:#f4f7fb; --ink:#1f2937; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:#eef3f8; font-family:"Malgun Gothic", Arial, sans-serif; line-height:1.55; }
+    .page { width:min(100%, 960px); min-height:100vh; margin:0 auto 18px; padding:52px 56px; background:#fff; }
+    h1 { margin:0 0 10px; padding-bottom:12px; color:var(--navy); border-bottom:4px solid var(--navy); font-size:clamp(28px, 4vw, 42px); line-height:1.2; }
+    h2 { margin:30px 0 14px; padding-bottom:7px; color:var(--blue); border-bottom:1px solid var(--line); font-size:23px; }
+    h3 { margin:0 0 8px; color:var(--blue); font-size:18px; }
+    p { margin:0 0 12px; }
+    .subtitle { color:#475569; font-size:20px; font-weight:700; }
+    .lead { margin-top:24px; font-size:17px; }
+    .skills, .metric { margin:18px 0; padding:16px 18px; border-left:5px solid #3182ce; background:var(--soft); }
+    .label { display:block; margin-bottom:10px; color:var(--navy); font-size:13px; font-weight:800; letter-spacing:.5px; }
+    .tag { display:inline-block; margin:0 6px 7px 0; padding:5px 9px; color:#2d405b; background:#e7eef7; border:1px solid #c6d4e5; border-radius:4px; font-size:13px; font-weight:700; }
+    .grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:12px; }
+    .card, .case { padding:16px 18px; border:1px solid var(--line); background:#fff; }
+    .case { margin:12px 0; }
+    .case-title { margin-bottom:8px; color:var(--blue); font-size:18px; font-weight:800; }
+    .metric { color:var(--navy); background:#edf8ff; }
+    .notice { margin-top:18px; padding:16px 18px; border-left:5px solid #d53f3f; background:#fafbfc; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { padding:11px 13px; border:1px solid #cbd8e6; text-align:left; vertical-align:top; }
+    th { background:#edf3f9; color:#2a3c55; }
+    tr th:first-child { width:22%; }
+    .diagram { padding:15px 18px; color:#fff; background:#1e2b3d; border-radius:4px; font-family:Consolas, monospace; font-size:13px; line-height:1.45; white-space:pre-wrap; }
+    ul { padding-left:22px; }
+    li { margin:6px 0; }
+    .footer { margin-top:30px; color:#718096; font-size:12px; text-align:right; }
+    @media (max-width:650px) { .page { padding:32px 22px; } .grid { grid-template-columns:1fr; } .lead { font-size:16px; } th, td { padding:9px; font-size:14px; } }
+    @media print { @page { size:A4; margin:13mm 15mm 12mm; } body { background:#fff; font-size:9pt; } .page { width:auto; min-height:271mm; margin:0; padding:0; page-break-after:always; } .page:last-child { page-break-after:auto; } h1 { font-size:22pt; } h2 { margin-top:5mm; font-size:13pt; } .lead { margin-top:5mm; font-size:10pt; } .tag { font-size:7.6pt; } .grid { gap:3mm; } .card, .case { padding:3mm 3.5mm; } .footer { position:absolute; bottom:0; right:0; } }
+  </style>
 </head>
 <body>
-
-<!-- HEADER -->
-<h1>Developer Portfolio</h1>
-<div class="header-subtitle">GIS · Backend · Cloud Software Engineer</div>
-
-<div class="skill-tags">
-    <span class="label">CORE EXPERTISE</span>
-    <span class="tag">C# / .NET 8</span>
-    <span class="tag">WPF · MVVM</span>
-    <span class="tag">GIS · Spatial Data</span>
-    <span class="tag">MilSymbol Rendering</span>
-    <span class="tag">C++ / ATL / COM</span>
-    <span class="tag">ASTERIX CAT062</span>
-    <span class="tag">PostGIS</span>
-    <span class="tag">CesiumJS · Android</span>
-    <span class="tag">Java · Spring Boot</span>
-    <span class="tag">GCP · CI/CD</span>
-</div>
-
-<p><b>국방·공간정보 도메인</b>의 GIS 애플리케이션과 Java/Spring 기반 백엔드·클라우드 시스템을 개발해 왔습니다.</p>
-<p>C#/.NET 8·WPF·MVVM 기반 애플리케이션에서 <b>공간객체 처리, 국방 표준 전술부호(MilSymbol) 렌더링, 시계열 Replay</b>를 구현하고, C++/ATL/COM Native 모듈과 지도 엔진을 안정적으로 연동했습니다. ASTERIX CAT062 기반 표적 데이터, PostGIS 공간데이터, CesiumJS·Android 연동 경험을 바탕으로 다양한 클라이언트와 데이터 계층을 연결합니다.</p>
-<p>레거시 Java 시스템의 인증·인가와 데이터베이스를 현대화하고 GCP 관리형 환경으로 전환한 경험을 통해, <b>클라이언트·백엔드·배포 환경을 아우르는 문제 해결 역량</b>을 쌓았습니다.</p>
-
-<div class="notice-box">
-    <div class="notice-title">Confidentiality Notice</div>
-    <p>본 포트폴리오에는 국방 및 보안 관련 프로젝트 경험이 포함되어 있습니다.</p>
-    <p>보안 및 기밀 유지를 위해 실제 기관·고객사명, 운영 데이터, 부대 및 훈련정보, 내부 IP·URL, 서버명, 계정정보, 실제 DB 구조와 일부 시스템 명칭은 제거하거나 일반화하였습니다.</p>
-    <p>또한 시스템 구성도와 예시 데이터는 개발 경험을 설명하기 위한 목적으로 재구성하였으며, 실제 운영환경을 그대로 나타내지 않습니다.</p>
-</div>
-
-<hr style="border: none; border-top: 1pt solid #e2e8f0; margin: 24px 0;" />
-
-<!-- PROJECT 01 -->
-<h1>Project 01. 국방 훈련통제 GIS 솔루션 개발</h1>
-
-<h2>1. 프로젝트 개요</h2>
-<h3>프로젝트 목적</h3>
-<p>훈련통제 과정에서 발생하는 부대·임무·위치 정보를 GIS 지도 위에 표현하고, 일반 공간객체와 <b>국방 표준 전술부호(MilSymbol)</b>의 편집·표현, 훈련상황 Replay, 외부 훈련통제 시스템 연동을 제공하는 Windows 기반 GIS 애플리케이션입니다.</p>
-<p>.NET 8/WPF/MVVM 애플리케이션에서 지도 엔진, C++/ATL/COM 기반 전술부호 렌더러, 공간·시계열 데이터, 외부 시스템을 연결했습니다. ASTERIX CAT062 기반 표적 데이터 처리와 PostGIS·CesiumJS·Android 연동 경험을 적용할 수 있는 공간데이터 처리 역량을 갖추고 있습니다.</p>
-
-<h3>프로젝트 정보</h3>
-<table>
-    <tr>
-        <th style="width: 20%;">구분</th>
-        <th style="width: 80%;">내용</th>
-    </tr>
-    <tr>
-        <td><b>수행 기간</b></td>
-        <td><b>2025.12 ~ 2026.07</b></td>
-    </tr>
-    <tr>
-        <td><b>담당 역할</b></td>
-        <td>GIS Application 개발 / MilSymbol 전술부호 연동 / Replay 개발 / ASTERIX CAT062 데이터 처리 / 외부 시스템·CesiumJS·Android 연동 / 배포 구성</td>
-    </tr>
-    <tr>
-        <td><b>주요 기술</b></td>
-        <td><b>C#, .NET 8, WPF, MVVM</b>, C++, ATL/COM, MilSymbol Rendering, ASTERIX CAT062, XML, JSON/NDJSON, PostGIS, CesiumJS, Android, MariaDB</td>
-    </tr>
-    <tr>
-        <td><b>개발 환경</b></td>
-        <td>Windows x64, Visual Studio</td>
-    </tr>
-    <tr>
-        <td><b>주요 분야</b></td>
-        <td><b>GIS / 공간데이터</b>, 국방 전술부호, 시계열 데이터, 시스템 통합</td>
-    </tr>
-</table>
-
-<h2>2. 시스템 아키텍처 및 담당 영역</h2>
-<p>프로젝트는 크게 <b>WPF GIS Application</b>, <b>GIS Map Component</b>, <b>군사부호 Rendering Module</b>, <b>훈련 데이터 및 외부 시스템</b>으로 구성되었습니다.</p>
-
-<div class="diagram-box">┌──────────────────────────────┐
-│     외부 훈련통제 시스템     │
-│                              │
-│  훈련정보 / 좌표선택 요청    │
-└──────────────┬───────────────┘
-               │ API / Request
-               ▼
-┌───────────────────────────────────────┐
-│           GIS Application             │
-│            (.NET 8 / WPF)             │
-│                                       │
-│  ┌─────────────────────────────────┐  │
-│  │ UI / ViewModel / Application    │  │
-│  └─────────────────────────────────┘  │
-│                 │                     │
-│  ┌──────────────▼──────────────────┐  │
-│  │ GIS Object / Overlay Processing │  │
-│  └─────────────────────────────────┘  │
-│                 │                     │
-│  ┌──────────────▼──────────────────┐  │
-│  │       Replay Processing         │  │
-│  └─────────────────────────────────┘  │
-│                 │                     │
-│  ┌──────────────▼──────────────────┐  │
-│  │ External System Integration     │  │
-│  └─────────────────────────────────┘  │
-└───────────┬─────────────────┬─────────┘
-            │                 │ ATL / COM
-            ▼                 ▼
-┌─────────────────┐   ┌────────────────────┐
-│  GIS Map Engine │   │ Military Symbol    │
-│                 │   │ Rendering Module   │
-│ Vector Rendering│   │                    │
-│ Coordinate Conv.│   │ C++ / Native       │
-│ Map Interaction │   │ Symbol Rendering   │
-└─────────────────┘   └────────────────────┘
-            │
-            ▼
-┌─────────────────────────────┐
-│  Database / Replay Dataset  │
-└─────────────────────────────┘</div>
-
-<h3>담당 영역 Detail</h3>
-<ul>
-    <li><b>GIS Application:</b> .NET 8 / WPF 기반 GIS 애플리케이션 개발, MVVM 기반 UI 및 상태관리, 지도 이동·확대·회전·좌표변환 연동, DB/외부 서비스 데이터와 지도 객체 상태 동기화</li>
-    <li><b>공간객체 및 전술부호:</b> XML 기반 GIS Overlay 데이터 Load/Edit/Save, 일반객체와 전술부호의 서로 다른 Rendering Pipeline 처리, C++ ATL/COM 기반 군사부호 Rendering Module 연동, 색상·투명도·표현 옵션 직렬화 및 복원</li>
-    <li><b>Replay Engine:</b> JSON/NDJSON 기반 시계열 이벤트 데이터 처리, Keyframe과 Delta Event를 이용한 특정 시점 상태 복원, 재생·일시정지·배속 기능 및 지도 객체 상태 동기화</li>
-    <li><b>외부 시스템 연동:</b> 외부 시스템 연계 좌표 선택 요청 수신, MGRS 등 좌표체계 변환, API 형태의 결과 반환</li>
-    <li><b>설치 및 배포:</b> .NET/Native Runtime 의존성 구성, C++ COM Module 자동 등록, PowerShell 및 Installer 기반 배포 패키지 구성 및 x64 운영환경 검증</li>
-</ul>
-
-<h2>3. 핵심 기술 이슈 및 문제 해결</h2>
-
-<div class="case-box">
-    <div class="case-title">CASE 01. 대용량 시계열 데이터의 특정 시점 상태 복원</div>
-    <p><b>[Problem]</b> 훈련 Replay 데이터는 시간의 흐름에 따라 객체 상태가 누적 변경되는 구조로, 특정 시점으로 이동 시 처음부터 모든 이벤트를 순차 적용하면 데이터 증가에 따라 처리 지연이 심화되는 문제가 발생했습니다.</p>
-    <p><b>[Analysis]</b> 매번 전체 이벤트를 재처리하는 대신, <i>'가장 가까운 기준 상태(Keyframe) + 이후 발생한 변경사항(Delta Event)'</i> 조합으로 상태를 복원하도록 구조 개선을 결정했습니다.</p>
-    <div class="diagram-box">Replay Dataset
-├── Manifest & Plan / Metadata
-└── Event Stream
-     ├── Keyframe (기준 상태)
-     ├── Delta Event 1 → Delta Event 2 ...
-     └── Keyframe (구간별 기준)</div>
-    <p><b>[Solution & Result]</b> 일정 간격의 Keyframe과 Indexing 구조를 설계해 탐색 구간을 최적화했습니다. <b>전체 순차 탐색 대신 기준 상태와 최소 Delta만 적용</b>하여 목표 시점 복원 성능과 메모리 효율을 함께 개선했습니다.</p>
-    <div class="metric-box"><span class="metric-label">MEASURABLE IMPACT</span> · 내부 성능 검증 기준, 전체 순차 탐색 대비 <b>특정 시점 탐색 시간 약 85% 단축</b>, <b>메모리 점유율 약 60% 절감</b>.</div>
-</div>
-
-<div class="case-box">
-    <div class="case-title">CASE 02. 일반 GIS 객체와 전술부호의 서로 다른 Rendering Pipeline 통합</div>
-    <p><b>[Problem]</b> WPF Vector로 표현되는 일반 GIS 객체와 C++ Native 모듈에서 이미지를 생성하는 전술부호가 단일 Overlay 문서 내에서 혼재되어 파이프라인 관리가 복잡해지는 문제가 있었습니다.</p>
-    <p><b>[Analysis]</b> 공통 Overlay Data 구조를 유지하면서 객체 유형에 따라 Rendering 책임을 명확히 분리하는 패턴을 설계했습니다.</p>
-    <div class="diagram-box">Overlay Object ──┬── 일반객체 ──> WPF Vector Rendering
-                 └── 전술부호 ──> C++ COM ──> Native Symbol Renderer ──> Image Rendering</div>
-    <p><b>[Solution & Result]</b> 직렬화 시 전술부호의 부호 코드, 채움, 수식자, 투명도 등의 옵션 손실을 방지하도록 인코딩 구조를 정립하고, <b>Managed C#과 Native C++/COM 간 Rendering Contract</b>를 안정화했습니다. 이를 통해 일반 GIS 객체와 MilSymbol 객체를 단일 Overlay 문서에서 일관되게 처리했습니다.</p>
-</div>
-
-<div class="case-box">
-    <div class="case-title">CASE 03. 다양한 실행환경과 Native Dependency를 포함한 배포 구조 정리</div>
-    <p><b>[Problem]</b> .NET Desktop Runtime, C++ Native Runtime, COM Module, 지도 엔진 DLL 등 복잡한 의존성으로 인해 운영 환경 배포 시 누락 오류 발생 가능성이 존재했습니다.</p>
-    <p><b>[Solution & Result]</b> <b>Build → Dependency 구성 → COM 등록 → Installer 생성</b>으로 이어지는 표준화·자동화 절차를 정립했습니다. .NET Desktop Runtime, Native Runtime, 지도 엔진 DLL, COM Module을 배포 패키지에 명시적으로 포함해 검증된 x64 설치 환경을 구성했습니다.</p>
-    <div class="metric-box"><span class="metric-label">MEASURABLE IMPACT</span> · 검증 대상 운영 환경에서 <b>의존성 누락으로 인한 배포 오류율 0%</b> 달성. 반복 수동 점검을 제거해 <b>빌드·배포 준비 리드타임을 단축</b>했습니다.</div>
-</div>
-
-<h2>4. 주요 성과 및 배운 점</h2>
-<ul>
-    <li><b>.NET 8/WPF/MVVM 및 C++/COM 연동</b> 기반 국방 GIS·MilSymbol 핵심 기능 구현</li>
-    <li><b>Keyframe/Delta Event</b> 시계열 처리 패턴을 적용해 대용량 Replay의 복원 성능과 메모리 효율 개선</li>
-    <li>ASTERIX CAT062, PostGIS, CesiumJS·Android까지 확장 가능한 <b>공간데이터 통합 역량</b> 확보</li>
-    <li>Data → Model → Serialization → Renderer → Native Engine으로 이어지는 전체 흐름을 제어하는 시스템 통합 역량 확보</li>
-</ul>
-
-<div class="page-break"></div>
-
-<!-- PROJECT 02 -->
-<h1>Project 02. 라이선스 관리 시스템 현대화 및 GCP 전환</h1>
-
-<h2>1. 프로젝트 개요</h2>
-<h3>프로젝트 목적</h3>
-<p>온프레미스 환경에서 운영되던 레거시 라이선스 발급·배포 시스템을 Java 21 및 Spring Boot 3 기반으로 현대화하고, OAuth2 인증 도입 및 GCP Cloud Run 기반 관리형 클라우드 환경으로 마이그레이션한 프로젝트입니다. <b>배포·운영 표준화와 민감정보 분리</b>를 통해 인프라 운용 효율성과 보안성을 함께 높였습니다.</p>
-
-<h3>프로젝트 정보</h3>
-<table>
-    <tr>
-        <th style="width: 20%;">구분</th>
-        <th style="width: 80%;">내용</th>
-    </tr>
-    <tr>
-        <td><b>수행 기간</b></td>
-        <td>2025.06 ~ 2025.07</td>
-    </tr>
-    <tr>
-        <td><b>담당 역할</b></td>
-        <td>Backend 현대화 / 인증·인가 / DB Migration / GCP 배포환경 구성</td>
-    </tr>
-    <tr>
-        <td><b>주요 기술</b></td>
-        <td>Java 21, Spring Boot 3, Spring Security, OAuth2, JPA, PostgreSQL</td>
-    </tr>
-    <tr>
-        <td><b>Cloud / DevOps</b></td>
-        <td>GCP (Cloud Run, Cloud SQL, Secret Manager, VPC, Cloud Build), Docker, CI/CD</td>
-    </tr>
-</table>
-
-<h2>2. 시스템 아키텍처 및 담당 영역</h2>
-
-<div class="diagram-box">                 ┌──────────────────┐
-                 │      User        │
-                 └────────┬─────────┘
-                          │ OAuth2 Login
-                          ▼
-                 ┌──────────────────┐
-                 │ OAuth Provider   │
-                 └────────┬─────────┘
-                          │ Authenticated
-                          ▼
-┌──────────────────────────────────────────┐
-│             Cloud Application            │
-│  ┌────────────────────────────────────┐  │
-│  │       Spring Security              │  │
-│  │ Authentication / Authorization     │  │
-│  └──────────────────┬─────────────────┘  │
-│                     │                    │
-│  ┌──────────────────▼─────────────────┐  │
-│  │ Spring Boot Application            │  │
-│  │ Controller / Service / JPA         │  │
-│  └──────────────────┬─────────────────┘  │
-└─────────────────────┼────────────────────┘
-                      │ Private VPC Network
-                      ▼
-             ┌─────────────────┐
-             │   PostgreSQL    │ ◄─── Secret Manager
-             │ (Cloud SQL DB)  │      (DB Credential)
-             └─────────────────┘</div>
-
-<h2>3. 레거시 → 현대화 비교</h2>
-<table>
-    <tr>
-        <th style="width: 25%;">영역</th>
-        <th style="width: 37%;">Before (Legacy)</th>
-        <th style="width: 38%;">After (Modernized)</th>
-    </tr>
-    <tr>
-        <td><b>Java / Framework</b></td>
-        <td>Java 8 / Legacy Spring</td>
-        <td><b>Java 21 / Spring Boot 3</b></td>
-    </tr>
-    <tr>
-        <td><b>인증 및 보안</b></td>
-        <td>자체 로그인 / Custom Interceptor</td>
-        <td><b>Google OAuth2 / Spring Security Filter</b></td>
-    </tr>
-    <tr>
-        <td><b>Database / PK Strategy</b></td>
-        <td>MySQL (Auto-Increment)</td>
-        <td><b>PostgreSQL (Sequence Generator)</b></td>
-    </tr>
-    <tr>
-        <td><b>인프라 및 배포</b></td>
-        <td>On-Premise 수동 배포 / 로컬 설정</td>
-        <td><b>GCP Cloud Run / Docker / Secret Manager / Cloud Build</b></td>
-    </tr>
-</table>
-
-<h2>4. 핵심 기술 이슈 및 문제 해결</h2>
-
-<div class="case-box">
-    <div class="case-title">CASE 01. Custom Interceptor 중심 인증구조를 Spring Security로 통합</div>
-    <p><b>[Problem]</b> 로직별로 분산되어 있던 Custom Interceptor의 인증/인가 접근 제어를 개선하고 통합 관리가 필요했습니다.</p>
-    <p><b>[Solution]</b> OAuth2 Login과 Spring Security Filter Chain을 결합하여 공통 보안 계층으로 통합하고, 미승인 사용자를 고려한 Role 기반 접근 제어 정책을 도입했습니다.</p>
-</div>
-
-<div class="case-box">
-    <div class="case-title">CASE 02. MySQL에서 PostgreSQL로의 DB Migration & PK 전략 대응</div>
-    <p><b>[Problem]</b> MySQL 종속적인 PK 생성 방식 및 Type 차이로 인해 simple DB 전환 시 JPA Entity 매핑 오류가 발생했습니다.</p>
-    <p><b>[Solution]</b> JPA <code>@SequenceGenerator</code>와 PostgreSQL Sequence 간 명확한 생성 전략을 정립하고 데이터 이관 시의 무결성을 확보했습니다.</p>
-</div>
-
-<div class="case-box">
-    <div class="case-title">CASE 03. Secure Cloud Migration (Cloud Run + Secret Manager)</div>
-    <p><b>[Problem]</b> 설정 파일 내 노출 위험이 있던 DB Credential 및 OAuth Secret의 보안 강화가 요구되었습니다.</p>
-    <p><b>[Solution]</b> GCP Secret Manager에 비밀 정보를 격리 관리하고 Cloud Run 컨테이너 실행 시 환경 변수로 주입하는 구조를 구축했습니다. Cloud Build·Docker 기반 배포 절차를 표준화해 환경별 수동 설정을 줄이고, <b>소스·설정 파일의 민감정보 평문 노출 0건</b>을 목표로 관리했습니다.</p>
-    <div class="metric-box"><span class="metric-label">MEASURABLE IMPACT</span> · 관리형 Cloud Run 전환으로 <b>서버 패치·용량 관리 작업을 제거</b>하고, Secret Manager 적용으로 <b>배포 설정의 비밀정보 분리율 100%</b>를 달성했습니다.</div>
-</div>
-
-<h2>5. Core Competencies Summary</h2>
-<table>
-    <tr>
-        <th style="width: 25%;">분야</th>
-        <th style="width: 75%;">상세 역량</th>
-    </tr>
-    <tr>
-        <td><b>GIS / Desktop</b></td>
-        <td><b>C#, .NET 8, WPF, MVVM</b>, GIS Engine Integration, MilSymbol Rendering, ASTERIX CAT062, PostGIS, CesiumJS, Android, XML, C++ ATL/COM</td>
-    </tr>
-    <tr>
-        <td><b>Backend / Database</b></td>
-        <td><b>Java 21, Spring Boot 3, Spring Security, OAuth2</b>, JPA, PostgreSQL, MariaDB</td>
-    </tr>
-    <tr>
-        <td><b>Cloud / DevOps</b></td>
-        <td><b>GCP (Cloud Run, Cloud SQL, Secret Manager, Cloud Build)</b>, Docker, CI/CD Pipeline, secure configuration management</td>
-    </tr>
-</table>
-
+  <main>
+    <section class="page">
+      <h1>Developer Portfolio</h1>
+      <div class="subtitle">GIS · Backend · Cloud Software Engineer</div>
+      <p class="lead"><b>국방·공간정보 도메인</b>에서 GIS 애플리케이션, 공간·시계열 데이터 처리, Java/Spring 기반 백엔드와 GCP 클라우드 환경을 연결해 온 소프트웨어 엔지니어입니다. 클라이언트·Native 모듈·데이터베이스·배포 환경을 함께 이해하고 복잡한 연동 문제를 구조적으로 해결합니다.</p>
+      <div class="skills"><span class="label">CORE EXPERTISE</span><span class="tag">C# / .NET 8</span><span class="tag">WPF · MVVM</span><span class="tag">GIS · Spatial Data</span><span class="tag">MilSymbol Rendering</span><span class="tag">C++ / ATL / COM</span><span class="tag">ASTERIX CAT062</span><span class="tag">PostGIS</span><span class="tag">CesiumJS · Android</span><span class="tag">Java · Spring Boot</span><span class="tag">GCP · CI/CD</span></div>
+      <h2>핵심 역량</h2>
+      <div class="grid"><article class="card"><h3>GIS & 전술부호</h3><p>C#/.NET 8·WPF·MVVM 기반 GIS 애플리케이션에서 공간객체 처리, <b>국방 표준 전술부호(MilSymbol) 렌더링</b>, 좌표 변환과 시계열 Replay를 구현했습니다.</p></article><article class="card"><h3>Native · 공간데이터 통합</h3><p>C++/ATL/COM 기반 Native 렌더러와 지도 엔진을 연동하고, ASTERIX CAT062·PostGIS·CesiumJS·Android 연동 경험을 공간데이터 흐름에 적용했습니다.</p></article><article class="card"><h3>Backend & Security</h3><p>Java 21·Spring Boot 3·Spring Security·OAuth2 기반으로 인증·인가와 DB 구조를 현대화하고 PostgreSQL 전환을 수행했습니다.</p></article><article class="card"><h3>Cloud & Delivery</h3><p>GCP Cloud Run·Cloud SQL·Secret Manager·Cloud Build·Docker를 활용해 관리형 클라우드 배포와 안전한 설정 관리를 구성했습니다.</p></article></div>
+      <h2>채용 담당자를 위한 성과 요약</h2>
+      <div class="metric"><b>성능 최적화</b> · Keyframe/Delta Event 방식으로 특정 시점 탐색 시간을 약 <b>85% 단축</b>, 메모리 점유율을 약 <b>60% 절감</b>했습니다.</div>
+      <div class="metric"><b>배포 안정성</b> · Runtime·COM·Native DLL 의존성을 표준화해 검증 환경에서 <b>의존성 누락 배포 오류율 0%</b>를 달성했습니다.</div>
+      <div class="notice"><b>Confidentiality Notice</b><br>국방·보안 관련 프로젝트는 기밀 유지를 위해 실제 기관·고객사명, 운영 데이터, 내부 IP/URL, 서버명, 계정정보와 일부 시스템 명칭을 제거하거나 일반화했습니다.</div>
+      <div class="footer">Developer Portfolio · 1 / 3</div>
+    </section>
+    <section class="page">
+      <h1>Project 01. 국방 훈련통제 GIS 솔루션 개발</h1>
+      <p class="lead">훈련통제 과정의 부대·임무·위치 정보를 GIS 지도 위에 표현하고, 일반 공간객체와 <b>국방 표준 전술부호(MilSymbol)</b>의 편집·표현, Replay, 외부 훈련통제 시스템 연동을 제공하는 Windows 기반 GIS 애플리케이션을 개발했습니다.</p>
+      <h2>프로젝트 정보</h2><table><tr><th>수행 기간</th><td><b>2025.12 ~ 2026.07</b></td></tr><tr><th>담당 역할</th><td>GIS Application · MilSymbol 전술부호 · Replay · ASTERIX CAT062 데이터 처리 · 외부 시스템/CesiumJS/Android 연동 · 배포 구성</td></tr><tr><th>기술</th><td><b>C#, .NET 8, WPF, MVVM</b>, C++, ATL/COM, XML, JSON/NDJSON, PostGIS, CesiumJS, Android, MariaDB</td></tr></table>
+      <h2>아키텍처와 담당 영역</h2><div class="diagram">External Training Control System
+        │ API / coordinate request
+        ▼
+GIS Application (.NET 8 / WPF / MVVM)
+  ├─ GIS Object & Overlay Processing
+  ├─ Replay Processing (Keyframe + Delta Event)
+  └─ External Integration
+        ├─ GIS Map Engine / Spatial Data
+        └─ C++ ATL/COM MilSymbol Renderer</div>
+      <ul><li><b>GIS Application:</b> 지도 이동·확대·회전·좌표변환, UI 상태관리, 외부·DB 데이터와 지도 객체 상태 동기화</li><li><b>Spatial & MilSymbol:</b> XML Overlay Load/Edit/Save, 일반 객체·전술부호 Rendering Pipeline 분리, 부호 옵션 직렬화와 복원</li><li><b>Replay Engine:</b> JSON/NDJSON 시계열 이벤트, Keyframe·Delta Event 기반 상태 복원, 재생·일시정지·배속</li><li><b>Deployment:</b> .NET/Native Runtime, 지도 엔진 DLL, COM Module 등록, x64 Installer 패키지 검증</li></ul>
+      <h2>핵심 문제 해결 및 성과</h2><article class="case"><div class="case-title">CASE 01. 대용량 시계열 데이터의 특정 시점 상태 복원</div><p>전체 이벤트를 처음부터 적용하는 방식 대신 <b>가장 가까운 Keyframe + 이후 Delta Event</b>만 적용하도록 설계했습니다.</p><div class="metric"><b>Impact:</b> 내부 성능 검증 기준, 특정 시점 탐색 시간 약 <b>85% 단축</b> · 메모리 점유율 약 <b>60% 절감</b></div></article><article class="case"><div class="case-title">CASE 02. 일반 GIS 객체와 전술부호 Rendering Pipeline 통합</div><p>Managed C#과 Native C++/COM 간 Rendering Contract를 안정화해 MilSymbol과 일반 GIS 객체를 단일 Overlay 문서에서 일관되게 처리했습니다.</p></article><article class="case"><div class="case-title">CASE 03. Native Dependency를 포함한 배포 표준화</div><p>Build → Dependency 구성 → COM 등록 → Installer 생성 절차를 정립했습니다.</p><div class="metric"><b>Impact:</b> 검증 대상 운영 환경에서 <b>의존성 누락 배포 오류율 0%</b> · 반복 수동 점검 제거로 배포 준비 리드타임 단축</div></article>
+      <div class="footer">Developer Portfolio · 2 / 3</div>
+    </section>
+    <section class="page">
+      <h1>Project 02. 라이선스 관리 시스템 현대화 및 GCP 전환</h1>
+      <p class="lead">온프레미스 레거시 라이선스 발급·배포 시스템을 Java 21과 Spring Boot 3로 현대화하고, OAuth2 인증과 GCP Cloud Run 기반 관리형 환경으로 마이그레이션했습니다. <b>인증·DB·배포를 함께 개선</b>해 운용 효율성과 보안성을 높였습니다.</p>
+      <h2>프로젝트 정보</h2><table><tr><th>수행 기간</th><td>2025.06 ~ 2025.07</td></tr><tr><th>담당 역할</th><td>Backend 현대화 · 인증/인가 · DB Migration · GCP 배포환경 구성</td></tr><tr><th>기술</th><td><b>Java 21, Spring Boot 3, Spring Security, OAuth2</b>, JPA, PostgreSQL, Docker</td></tr><tr><th>Cloud / DevOps</th><td><b>GCP Cloud Run, Cloud SQL, Secret Manager, VPC, Cloud Build</b>, CI/CD</td></tr></table>
+      <h2>레거시 → 현대화</h2><table><tr><th>영역</th><th>Before</th><th>After</th></tr><tr><td>Framework</td><td>Java 8 / Legacy Spring</td><td><b>Java 21 / Spring Boot 3</b></td></tr><tr><td>Security</td><td>Custom Interceptor</td><td><b>OAuth2 / Spring Security Filter</b></td></tr><tr><td>Database</td><td>MySQL / Auto Increment</td><td><b>PostgreSQL / Sequence Generator</b></td></tr><tr><td>Infrastructure</td><td>On-Premise / 수동 배포</td><td><b>Cloud Run / Docker / Secret Manager</b></td></tr></table>
+      <h2>핵심 문제 해결</h2><article class="case"><div class="case-title">CASE 01. Custom Interceptor 중심 인증구조 통합</div><p>OAuth2 Login과 Spring Security Filter Chain을 결합해 분산된 접근 제어를 공통 보안 계층으로 통합하고 Role 기반 정책을 도입했습니다.</p></article><article class="case"><div class="case-title">CASE 02. MySQL → PostgreSQL DB Migration</div><p>JPA <code>@SequenceGenerator</code>와 PostgreSQL Sequence의 생성 전략을 정립해 PK·타입 차이에 따른 매핑 오류를 해소하고 이관 무결성을 확보했습니다.</p></article><article class="case"><div class="case-title">CASE 03. Secure Cloud Migration</div><p>Secret Manager에 DB Credential·OAuth Secret을 격리하고 Cloud Run 실행 시 환경 변수로 주입했습니다. Cloud Build·Docker 배포 절차를 표준화해 수동 설정을 줄였습니다.</p><div class="metric"><b>Impact:</b> 서버 패치·용량 관리 작업 제거 · 배포 설정의 <b>비밀정보 분리율 100%</b> · 소스·설정 파일의 평문 노출 <b>0건</b> 목표 관리</div></article>
+      <h2>Core Competencies</h2><table><tr><th>GIS / Desktop</th><td>C#/.NET 8, WPF/MVVM, MilSymbol, ASTERIX CAT062, PostGIS, CesiumJS, Android, C++/COM</td></tr><tr><th>Backend / Database</th><td>Java 21, Spring Boot 3, Spring Security, OAuth2, JPA, PostgreSQL, MariaDB</td></tr><tr><th>Cloud / DevOps</th><td>GCP Cloud Run, Cloud SQL, Secret Manager, Cloud Build, Docker, CI/CD</td></tr></table>
+      <div class="footer">Developer Portfolio · 3 / 3</div>
+    </section>
+  </main>
 </body>
 </html>
